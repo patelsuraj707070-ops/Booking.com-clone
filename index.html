@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking.com | Official site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/booking logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div id="top-bar">
+            <div id="top-left">
+                <img src="./assets/booking.com.png" alt="booking">
+            </div>
+            <div id="top-right">
+                <p>INR</p>
+                <img src="./assets/india.png" alt="flag">
+                <i class="fa-regular fa-circle-question"></i>
+                <p>List your property</p>
+                <button type="button">Register</button>
+                <button type="button">Sign in</button>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-bed"></i>
+                    Stays
+                </li>
+                <li>
+                    <i class="fa-solid fa-plane"></i>
+                    Flights
+                </li>
+                <li><i class="fa-solid fa-car"></i>
+                    Car rental
+                </li>
+                <li><i class="fa-solid fa-dharmachakra"></i>
+                    Attractions
+                </li>
+                <li>
+                    <i class="fa-solid fa-taxi"></i>
+                    Airpot taxies
+                </li>
+            </ul>
+        </nav>
+
+        <div id="input-container">
+            <div class="input-fields">
+                <i class="fa-solid fa-bed"></i>
+                <span class="input-label">
+                    <label for="destination">Enter destination</label>
+                    <input type="text" name="destination" id="destination" placeholder="where are you going?">
+                </span>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="input-fields">
+                <i class="fa-regular fa-calendar-days"></i>
+                <span class="input-label">
+                    <label for="date">Select dates</label>
+                    <input type="text" name="date" id="date" placeholder="Check in/check out date">
+                </span>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="input-fields">
+                <i class="fa-solid fa-user"></i>
+                <span class="input-label">
+                    <label for="occupancy">Select occupancy</label>
+                    <input type="text" name="occupancy" id="occupancy" placeholder="2 adult. 0 children.1 room">
+                </span>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <button>Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="offers">
+            <div id="check-container">
+                <input type="checkbox" id="work">
+                <label for="work">I'm traveling for work</label>
+                <input type="checkbox" id="flights">
+                <label for="flights">Add flights to my search</label>
+            </div>
+            <div id="off-pro">
+                <h1>Offers</h1>
+                <p>Promotions, deals, and special offers for you</p>
+            </div>
+            <div id="gateway">
+                <div id="gateway-cont">
+                    <p id="p1">Escape for less with our Getaway Deals</p>
+                    <h2>No catch. Just getaways.</h3>
+                        <p>At least 15% off select stays worldwide – just book and go.</p>
+                        <button type="button" id="gateway-btn">Save with a Gateway Deal</button>
+                </div>
+                <div id="gateway-img">
+                    <img src="./assets/gateway.jpeg" alt="gateway">
+                </div>
+            </div>
+        </section>
+
+        <section id="trip">
+            <h2>Trending destinations</h3>
+                <div class="trip-container">
+                    <p>Most popular choices for travelers from India</p>
+                    <div class="trip-cards-container">
+                        <div class="trip-row-container bg-image" id="trip-row-1">
+                            <h3>New Delhi</h3>
+                            <p>India</p>
+                        </div>
+                        <div class="trip-row-container bg-image" id="trip-row-2">
+                            <h3>Chennai</h3>
+                            <p>India</p>
+                        </div>
+                        <div class="trip-row-container bg-image" id="trip-row-3">
+                            <h3>Hyderabad</h3>
+                            <p>India</p>
+                        </div>
+                        <div class="trip-row-container bg-image" id="trip-row-4">
+                            <h3>Mumbai</h3>
+                            <p>India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button>See more <i class="fa-solid fa-angle-down"></i></button>
+        </section>
+
+        <section id="brows-property">
+            <h2>Browse by property type</h2>
+            <div id="brows-property-container">
+                <div class="brows-property-cards">
+                    <img src="./assets/hotels.png" alt="Hotels">
+                    <h3>Hotels</h3>
+                </div>
+                <div class="brows-property-cards">
+                    <img src="./assets/apartments.png" alt="Apartments">
+                    <h3>Apartments</h3>
+                </div>
+                <div class="brows-property-cards">
+                    <img src="./assets/resorts.png" alt="Resorts">
+                    <h3>Resorts</h3>
+                </div>
+                <div class="brows-property-cards">
+                    <img src="./assets/villas.png" alt="Villas">
+                    <h3>Villas</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="unique-properties">
+            <h2>Stay at our top unique properties</h2>
+            <p>From castles and villas to boats and igloos, we have it all</p>
+
+            <!-- first row -->
+            <div class="unique-properties-row">
+
+                <!-- CARD 1 -->
+                <div class="uni-prop-cards">
+                    <div class="uni-prop-card-img" id="prop-bg-one">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="uni-prop-content">
+                        <div class="cont-top">
+                            <span>Hotel</span>
+                            <span>⭐⭐⭐⭐⭐👍</span>
+                            <span class="top-tag">Genius</span>
+                        </div>
+
+                        <h4>Taj Fisherman's Cove Resort & Spa, Chennai</h4>
+
+                        <p class="prop-loc">Mahabalipuram, India</p>
+
+                        <span class="prop-rating">
+                            <p>8.2</p>
+                            <div class="prop-review">
+                                <span>Very Good</span>
+                                <span>699 reviews</span>
+                            </div>
+                        </span>
+
+                        <div class="prop-bottom">
+                            <span>Starting from</span>
+                            <span><strong>₹16,650</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 2 -->
+                <div class="uni-prop-cards">
+                    <div class="uni-prop-card-img" id="prop-bg-two">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="uni-prop-content">
+                        <div class="cont-top">
+                            <span>Hotel</span>
+                            <span>⭐⭐⭐⭐⭐👍</span>
+                            <span class="top-tag">Genius</span>
+                        </div>
+
+                        <h4>Taj Fisherman's Cove Resort & Spa, Chennai</h4>
+
+                        <p class="prop-loc">Mahabalipuram, India</p>
+
+                        <span class="prop-rating">
+                            <p>8.2</p>
+                            <div class="prop-review">
+                                <span>Very Good</span>
+                                <span>699 reviews</span>
+                            </div>
+                        </span>
+
+                        <div class="prop-bottom">
+                            <span>Starting from</span>
+                            <span><strong>₹16,650</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 3 -->
+                <div class="uni-prop-cards">
+                    <div class="uni-prop-card-img" id="prop-bg-three">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="uni-prop-content">
+                        <div class="cont-top">
+                            <span>Hotel</span>
+                            <span>⭐⭐⭐⭐⭐👍</span>
+                            <span class="top-tag">Genius</span>
+                        </div>
+
+                        <h4>Taj Fisherman's Cove Resort & Spa, Chennai</h4>
+
+                        <p class="prop-loc">Mahabalipuram, India</p>
+
+                        <span class="prop-rating">
+                            <p>8.2</p>
+                            <div class="prop-review">
+                                <span>Very Good</span>
+                                <span>699 reviews</span>
+                            </div>
+                        </span>
+
+                        <div class="prop-bottom">
+                            <span>Starting from</span>
+                            <span><strong>₹16,650</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 4 -->
+                <div class="uni-prop-cards">
+                    <div class="uni-prop-card-img" id="prop-bg-four">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="uni-prop-content">
+                        <div class="cont-top">
+                            <span>Hotel</span>
+                            <span>⭐⭐⭐⭐⭐👍</span>
+                            <span class="top-tag">Genius</span>
+                        </div>
+
+                        <h4>Taj Fisherman's Cove Resort & Spa, Chennai</h4>
+
+                        <p class="prop-loc">Mahabalipuram, India</p>
+
+                        <span class="prop-rating">
+                            <p>8.2</p>
+                            <div class="prop-review">
+                                <span>Very Good</span>
+                                <span>699 reviews</span>
+                            </div>
+                        </span>
+
+                        <div class="prop-bottom">
+                            <span>Starting from</span>
+                            <span><strong>₹16,650</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <h2>Deals for the weekend</h2>
+            <p>Save on stays for August 21 - August 23</p>
+            <!-- second row -->
+            <div class="unique-properties-row">
+
+                <!-- CARD 1 -->
+                <div class="uni-prop-cards">
+                    <div class="uni-prop-card-img" id="prop-bg-one">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="uni-prop-content">
+                        <div class="cont-top">
+                            <span>Hotel</span>
+                            <span>⭐⭐⭐⭐⭐👍</span>
+                            <span class="top-tag">Genius</span>
+                        </div>
+
+                        <h4>Taj Fisherman's Cove Resort & Spa, Chennai</h4>
+
+                        <p class="prop-loc">Mahabalipuram, India</p>
+
+                        <span class="prop-rating">
+                            <p>8.2</p>
+                            <div class="prop-review">
+                                <span>Very Good</span>
+                                <span>699 reviews</span>
+                            </div>
+                        </span>
+
+                        <div class="prop-bottom">
+                            <span>Starting from</span>
+                            <span><strong>₹16,650</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 2 -->
+                <div class="uni-prop-cards">
+                    <div class="uni-prop-card-img" id="prop-bg-two">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="uni-prop-content">
+                        <div class="cont-top">
+                            <span>Hotel</span>
+                            <span>⭐⭐⭐⭐⭐👍</span>
+                            <span class="top-tag">Genius</span>
+                        </div>
+
+                        <h4>Taj Fisherman's Cove Resort & Spa, Chennai</h4>
+
+                        <p class="prop-loc">Mahabalipuram, India</p>
+
+                        <span class="prop-rating">
+                            <p>8.2</p>
+                            <div class="prop-review">
+                                <span>Very Good</span>
+                                <span>699 reviews</span>
+                            </div>
+                        </span>
+
+                        <div class="prop-bottom">
+                            <span>Starting from</span>
+                            <span><strong>₹16,650</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 3 -->
+                <div class="uni-prop-cards">
+                    <div class="uni-prop-card-img" id="prop-bg-three">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="uni-prop-content">
+                        <div class="cont-top">
+                            <span>Hotel</span>
+                            <span>⭐⭐⭐⭐⭐👍</span>
+                            <span class="top-tag">Genius</span>
+                        </div>
+
+                        <h4>Taj Fisherman's Cove Resort & Spa, Chennai</h4>
+
+                        <p class="prop-loc">Mahabalipuram, India</p>
+
+                        <span class="prop-rating">
+                            <p>8.2</p>
+                            <div class="prop-review">
+                                <span>Very Good</span>
+                                <span>699 reviews</span>
+                            </div>
+                        </span>
+
+                        <div class="prop-bottom">
+                            <span>Starting from</span>
+                            <span><strong>₹16,650</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 4 -->
+                <div class="uni-prop-cards">
+                    <div class="uni-prop-card-img" id="prop-bg-four">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="uni-prop-content">
+                        <div class="cont-top">
+                            <span>Hotel</span>
+                            <span>⭐⭐⭐⭐⭐👍</span>
+                            <span class="top-tag">Genius</span>
+                        </div>
+
+                        <h4>Taj Fisherman's Cove Resort & Spa, Chennai</h4>
+
+                        <p class="prop-loc">Mahabalipuram, India</p>
+
+                        <span class="prop-rating">
+                            <p>8.2</p>
+                            <div class="prop-review">
+                                <span>Very Good</span>
+                                <span>699 reviews</span>
+                            </div>
+                        </span>
+
+                        <div class="prop-bottom">
+                            <span>Starting from</span>
+                            <span><strong>₹16,650</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <h2>Homes guests love</h2>
+            <!-- third row -->
+            <div class="unique-properties-row">
+
+                <!-- CARD 1 -->
+                <div class="uni-prop-cards">
+                    <div class="uni-prop-card-img" id="prop-bg-one">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="uni-prop-content">
+                        <div class="cont-top">
+                            <span>Hotel</span>
+                            <span>⭐⭐⭐⭐⭐👍</span>
+                            <span class="top-tag">Genius</span>
+                        </div>
+
+                        <h4>Taj Fisherman's Cove Resort & Spa, Chennai</h4>
+
+                        <p class="prop-loc">Mahabalipuram, India</p>
+
+                        <span class="prop-rating">
+                            <p>8.2</p>
+                            <div class="prop-review">
+                                <span>Very Good</span>
+                                <span>699 reviews</span>
+                            </div>
+                        </span>
+
+                        <div class="prop-bottom">
+                            <span>Starting from</span>
+                            <span><strong>₹16,650</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 2 -->
+                <div class="uni-prop-cards">
+                    <div class="uni-prop-card-img" id="prop-bg-two">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="uni-prop-content">
+                        <div class="cont-top">
+                            <span>Hotel</span>
+                            <span>⭐⭐⭐⭐⭐👍</span>
+                            <span class="top-tag">Genius</span>
+                        </div>
+
+                        <h4>Taj Fisherman's Cove Resort & Spa, Chennai</h4>
+
+                        <p class="prop-loc">Mahabalipuram, India</p>
+
+                        <span class="prop-rating">
+                            <p>8.2</p>
+                            <div class="prop-review">
+                                <span>Very Good</span>
+                                <span>699 reviews</span>
+                            </div>
+                        </span>
+
+                        <div class="prop-bottom">
+                            <span>Starting from</span>
+                            <span><strong>₹16,650</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 3 -->
+                <div class="uni-prop-cards">
+                    <div class="uni-prop-card-img" id="prop-bg-three">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="uni-prop-content">
+                        <div class="cont-top">
+                            <span>Hotel</span>
+                            <span>⭐⭐⭐⭐⭐👍</span>
+                            <span class="top-tag">Genius</span>
+                        </div>
+
+                        <h4>Taj Fisherman's Cove Resort & Spa, Chennai</h4>
+
+                        <p class="prop-loc">Mahabalipuram, India</p>
+
+                        <span class="prop-rating">
+                            <p>8.2</p>
+                            <div class="prop-review">
+                                <span>Very Good</span>
+                                <span>699 reviews</span>
+                            </div>
+                        </span>
+
+                        <div class="prop-bottom">
+                            <span>Starting from</span>
+                            <span><strong>₹16,650</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 4 -->
+                <div class="uni-prop-cards">
+                    <div class="uni-prop-card-img" id="prop-bg-four">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="uni-prop-content">
+                        <div class="cont-top">
+                            <span>Hotel</span>
+                            <span>⭐⭐⭐⭐⭐👍</span>
+                            <span class="top-tag">Genius</span>
+                        </div>
+
+                        <h4>Taj Fisherman's Cove Resort & Spa, Chennai</h4>
+
+                        <p class="prop-loc">Mahabalipuram, India</p>
+
+                        <span class="prop-rating">
+                            <p>8.2</p>
+                            <div class="prop-review">
+                                <span>Very Good</span>
+                                <span>699 reviews</span>
+                            </div>
+                        </span>
+
+                        <div class="prop-bottom">
+                            <span>Starting from</span>
+                            <span><strong>₹16,650</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="travel">
+            <h2>Travel more, spend less</h2>
+            <div id="travel-container">
+                <div id="travel-container-content">
+                    <h3>Sign in, save money</h3>
+                    <p>Save 10% or more at participating properties – just look for the blue Genius label</p>
+                    <button type="button" id="sign-in">Sign in</button>
+                    <button type="button" id="register">Register</button>
+                </div>
+                <div id="travel-container-img">
+                    <img src="./assets/genius.png" alt="Genius">
+                </div>
+            </div>
+        </section>
+
+        <section id="travellers">
+            <h2>Popular with travelers from India</h2>
+            <ul class="cities-ul">
+                <li id="first-city">Domestic cities</li>
+                <li>International cities</li>
+                <li>Regions</li>
+                <li>countries</li>
+                <li>Places to stay</li>
+            </ul>
+            <div id="hotels-ul-container">
+                <ul>
+                    <li>Ooty hotels</li>
+                    <li>Munnar hotels</li>
+                    <li>Srinagar hotels</li>
+                    <li>Alleppey hotels</li>
+                    <li>Ahmedabad hotels</li>
+                </ul>
+                <ul>
+                    <li>Hyderabad hotels</li>
+                    <li>Mumbai hotels</li>
+                    <li>Rishīkesh hotels</li>
+                    <li>Shimla hotels</li>
+                    <li>Ayodhya hotels</li>
+                </ul>
+                <ul>
+                    <li>Jaipur hotels</li>
+                    <li>Bangalore hotels</li>
+                    <li>Hampi hotels</li>
+                    <li>Nainital hotels</li>
+                    <li>Kolkata hotels</li>
+                </ul>
+                <ul>
+                    <li>Puri hotels</li>
+                    <li>Udaipur hotels</li>
+                    <li>Pondicherry hotels</li>
+                    <li>Mangalore hotels</li>
+                    <li>Alibaug hotels</li>
+                </ul>
+                <ul>
+                    <li>Cochin hotels</li>
+                    <li>Varanasi hotels</li>
+                    <li>Varkala hotels</li>
+                    <li>Lonavala hotels</li>
+                    <li>Tiruvannāmalai hotels</li>
+                </ul>
+            </div>
+            <br>
+            <div id="travellers-links">
+                <a href="">Countries</a>
+                <a href="">Regions</a>
+                <a href="">Cities</a>
+                <a href="">Districts</a>
+                <a href="">Airports</a>
+                <a href="">Hotels</a>
+                <a href="">Places of interest</a>
+                <a href="">Vacation Homes</a>
+                <a href="">Apartments</a>
+                <a href="">Resorts</a>
+                <a href="">Villas</a>
+                <a href="">Hostels</a>
+                <a href="">B&Bs</a>
+                <a href="">Guest Houses</a>
+                <a href="">Unique places to stay</a>
+                <a href="">All destinations</a>
+                <a href="">All flight destinations</a>
+                <a href="">All car rental locations</a>
+                <a href="">All vacation destinations</a>
+                <a href="">Guides</a>
+                <a href="">Discover</a>
+                <a href="">Discover monthly stays</a>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

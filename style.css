@@ -1,0 +1,529 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #003B95;
+    height: 57vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#top-bar {
+    height: 15%;
+    width: 85%;
+    display: flex;
+}
+
+#top-left {
+    height: 100%;
+    width: 60%;
+}
+
+#top-left img {
+    height: 100%;
+    width: 20%;
+}
+
+#top-right {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    margin-left: 260px;
+}
+
+#top-right img {
+    height: 50%;
+    border-radius: 50%;
+}
+
+#top-right button {
+    color: #1454b3;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+nav {
+    height: 15%;
+    width: 85%;
+}
+
+nav ul {
+    color: white;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+#input-container {
+    height: 13%;
+    width: 85%;
+    background-color: rgb(234, 176, 31);
+    border-radius: 7px;
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+}
+
+.input-fields {
+    width: 30%;
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2px;
+}
+
+#input-container button {
+    width: 10%;
+    border-radius: 7px;
+    border-style: none;
+    background-color: #006ce4;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+input::placeholder {
+    font-weight: bold;
+    color: rgb(92, 92, 92);
+}
+
+.input-label label {
+    font-size: small;
+}
+
+main {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#offers {
+    height: auto;
+    width: 85%;
+}
+
+#off-pro {
+    margin-top: 27px;
+}
+
+#check-container {
+    font-weight: 40px;
+    font-size: medium;
+    padding: 7px;
+    margin: 7px;
+}
+
+#gateway {
+    border: 1px solid grey;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    margin-top: 27px;
+
+}
+
+#gateway-cont {
+    margin: 2px;
+    padding-top: 2px;
+}
+
+#p1 {
+    font-size: small;
+}
+
+#gateway-img img {
+    margin-right: 5px;
+    margin-top: 5px;
+    height: 100px;
+    border-radius: 7px;
+}
+
+#gateway-btn {
+    border-style: none;
+    padding: 11px;
+    margin-top: 5px;
+    background-color: #006ce4;
+    color: white;
+    border-radius: 7px;
+}
+
+#trip {
+    margin-top: 27px;
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trip-container {
+    height: 300px;
+    width: 100%;
+}
+
+.trip-cards-container {
+    display: flex;
+    gap: 13px;
+    height: 100%;
+    width: 100%;
+    margin-top: 15px; 
+}
+
+.trip-row-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: rgb(255, 255, 255);
+    height: 85%;
+    flex: 1;
+    min-width: 0;
+    border-radius: 10px;
+
+}
+
+.trip-cards-container h3, .trip-cards-container p {
+    margin: 0px 0px 5px 11px;
+}
+
+#trip-row-1 {
+    background-image: url('./assets/New\ Delhi.png');
+}
+
+#trip-row-2 {
+    background-image: url('./assets/Chennai.png');
+}
+
+#trip-row-3 {
+    background-image: url('./assets/Hydrabad.png');
+}
+
+#trip-row-4 {
+    background-image: url('./assets/Mumbai.png');
+}
+
+.bg-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: fit;
+}
+
+#trip button {
+    background-color: #006ce4;
+    color: white;
+    padding: 11px 17px;
+    border-radius: 6px;
+    border: none;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 11px;
+}
+
+#brows-property {
+    height: 50vh;
+    width: 85%;
+    margin-top: 27px;
+}
+
+#brows-property-container {
+    width: 100%;
+    height: 80%;
+    padding: 0;
+    display: flex;
+    gap: 13px;
+    margin-top: 21px;
+}
+
+.brows-property-cards {
+    height: 100%;
+    flex: 1;
+    min-width: 0;
+}
+
+.brows-property-cards img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#unique-properties {
+    margin: 25px;
+    height: auto;
+    width: 85%;
+    margin-bottom: 40px;
+}
+
+#unique-properties h2, #unique-properties p {
+    margin-top: 7px;
+}
+
+.unique-properties-row {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    gap: 13px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.uni-prop-cards {
+    height: 100%;
+    width: 25%;
+    box-shadow: 1px 5px 7px 1px rgb(163, 163, 163); 
+    border-radius: 11px;
+}
+
+.uni-prop-card-img {
+    height: 55%;
+    width: 100%;
+    border-radius: 11px 11px 0px 0px;
+}
+
+.uni-prop-card-img i {
+    background-color: white;
+    padding: 5px;
+    margin: 5px 0px 0px 284px;
+    border-radius: 50%;
+}
+
+.uni-prop-content {
+    height: 45%;
+    width: 100%;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border-radius: 0px 0px 11px 11px;
+}
+
+#prop-bg-one {
+    background-image: url(./assets/taj-fisherman.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: center;
+    object-fit: cover;
+}
+
+#prop-bg-two {
+    background-image: url(./assets/goa.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: center;
+    object-fit: cover;
+}
+
+#prop-bg-three {
+    background-image: url(./assets/grand-hyatt.jpg);
+     background-repeat: no-repeat;
+    background-position: center;
+    object-position: center;
+    object-fit: cover;
+}
+
+#prop-bg-four {
+    background-image: url(./assets/novotel-imagica.jpg);
+     background-repeat: no-repeat;
+    background-position: center;
+    object-position: center;
+    object-fit: cover;
+}
+
+.cont-top {
+    height: auto;
+}
+
+.cont-top span {
+    font-size: small;
+}
+
+.top-tag {
+    background-color: #006ce4;
+    color: white;
+    padding: 2px;
+}
+
+.uni-prop-content h4 {
+    margin-bottom: -5px;
+}
+
+.prop-loc {
+    font-size: small;
+}
+
+.prop-rating {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.prop-rating p {
+    background-color: #006ce4;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.prop-review {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.prop-review span {
+    background-color: transparent;
+    color: black;
+    font-size: small;
+}
+
+.prop-bottom {
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    gap: 6px;
+    height: 30px;
+    width: 100%;
+    margin-top: 7px;
+}
+
+.prop-bottom p {
+    font-size: medium;
+}
+
+#travel {
+    height: 200px;
+    width: 85%;
+    margin-top: 25px;
+}
+
+#travel-container {
+    width: 100%;
+    height: 60%;
+    padding: 11px;
+    margin-top: 20px;
+    border: 1px solid grey;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#travel-container-content p {
+    margin: 11px 0;
+}
+
+#travel-container-content button {
+    border: none;
+    padding: 11px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#travel-container-img img {
+    height: 100px;
+    width: 100px;
+}
+
+#sign-in {
+    background-color: #006ce4;
+    color: white;
+}
+
+#register {
+    color: #006ce4;
+    background-color: white;
+}
+
+#sign-in:hover {
+    background-color: #003179fd;
+}
+
+#register:hover {
+    background-color: #61a9fb9b;
+}
+
+#travellers {
+    width: 85%;
+    height: 50vh;
+}
+
+.cities-ul {
+    display: flex;
+    gap: 21px;
+    list-style: none;
+    margin: 21px 0px;
+}
+
+.cities-ul li {
+    padding: 11px;
+    border-radius: 21px;
+    cursor: pointer;
+}
+
+.cities-ul li:hover {
+    background-color: lightgray;
+}
+
+#first-city {
+    border: 1px solid #006ce4;
+    color: #006ce4;
+    background-color: #7bb1ee9a;
+    margin-bottom: 27px;
+}
+
+#hotels-ul-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#hotels-ul-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
