@@ -343,7 +343,7 @@ main {
 }
 
 #prop-bg-two {
-    background-image: url(./assets/goa.jpg);
+    background-image: url(./assets/two.png);
     background-repeat: no-repeat;
     background-position: center;
     object-position: center;
@@ -351,7 +351,7 @@ main {
 }
 
 #prop-bg-three {
-    background-image: url(./assets/grand-hyatt.jpg);
+    background-image: url(./assets/three.png);
      background-repeat: no-repeat;
     background-position: center;
     object-position: center;
@@ -359,8 +359,76 @@ main {
 }
 
 #prop-bg-four {
-    background-image: url(./assets/novotel-imagica.jpg);
+    background-image: url(./assets/four.png);
      background-repeat: no-repeat;
+    background-position: center;
+    object-position: center;
+    object-fit: cover;
+}
+
+#prop-bg-five {
+    background-image: url(./assets/five.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+
+#prop-bg-six {
+    background-image: url(./assets/six.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+
+#prop-bg-seven {
+    background-image: url(./assets/seven.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+
+#prop-bg-eight {
+    background-image: url(./assets/eight.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+
+#prop-bg-nine {
+    background-image: url(./assets/nine.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: center;
+    object-fit: cover;
+}
+
+#prop-bg-ten {
+    background-image: url(./assets/ten.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: center;
+    object-fit: cover;
+}
+
+#prop-bg-eleven {
+    background-image: url(./assets/eleven.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: center;
+    object-fit: cover;
+}
+
+#prop-bg-twelve {
+    background-image: url(./assets/twelve.jpg);
+    background-repeat: no-repeat;
     background-position: center;
     object-position: center;
     object-fit: cover;
@@ -500,8 +568,8 @@ main {
 }
 
 .cities-ul li {
-    padding: 11px;
-    border-radius: 21px;
+    padding: 12px;
+    border-radius: 50px;
     cursor: pointer;
 }
 
@@ -513,12 +581,13 @@ main {
     border: 1px solid #006ce4;
     color: #006ce4;
     background-color: #7bb1ee9a;
-    margin-bottom: 27px;
+    
 }
 
 #hotels-ul-container {
     display: flex;
     justify-content: space-around;
+    gap: 21px;
 }
 
 #hotels-ul-container ul {
@@ -526,4 +595,70 @@ main {
     display: flex;
     flex-direction: column;
     gap: 11px;
+}
+
+#travellers-links a {
+    text-decoration: none;
+    color: black;
+}
+
+#travellers-links a::hover{
+    text-decoration: underline;
+}
+
+footer {
+    height: auto;
+    width: 100%;
+    background-color:lightgray;
+    padding: 20px 65px;
+}
+
+#footer-upper ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+#footer-upper ul li h4 {
+    margin-bottom: 15px;
+}
+
+#footer-upper ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+#footer-upper {
+    height: 65%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer-mid {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+   padding: 7px 51px;
+}
+
+#footer-mid img {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+#footer-mid p {
+    font-weight: bolder;
+}
+
+#footer-lower {
+    height: 10%;
+    width: 100%;
+    border-top: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
